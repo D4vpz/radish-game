@@ -1,4 +1,9 @@
 let engine = new Coffee();
 
-engine.createWindow();
-engine.displayWindow();
+engine.createWindow(320, 240);
+
+window.onload = function () {
+    engine.displayWindow();
+
+    engine.cover('black');
+}
